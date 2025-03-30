@@ -44,7 +44,7 @@ jobs:
         
       # Upload artifact for GitHub Pages
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v1
         with:
           path: './build'
           
