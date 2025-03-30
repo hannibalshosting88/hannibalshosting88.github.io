@@ -1,25 +1,25 @@
-import React, { useState, useEffect } from 'react';
-import { fetchReadme } from '../../services/github';
+import React from 'react';
+// import { fetchReadme } from '../../services/github';
 
 function ProjectCard({ project }) {
-  const [readme, setReadme] = useState(null);
-  const [loadingReadme, setLoadingReadme] = useState(false);
+  // Removed unused state variables and functions
+  // const [readme, setReadme] = useState(null);
+  // const [loadingReadme, setLoadingReadme] = useState(false);
 
-  useEffect(() => {
-    // Function to fetch README for this project
-    const getReadme = async () => {
-      if (!project.name) return;
+  // useEffect(() => {
+  //   // Function to fetch README for this project
+  //   const getReadme = async () => {
+  //     if (!project.name) return;
       
-      setLoadingReadme(true);
-      const readmeContent = await fetchReadme(project.name);
-      setReadme(readmeContent);
-      setLoadingReadme(false);
-    };
+  //     setLoadingReadme(true);
+  //     const readmeContent = await fetchReadme(project.name);
+  //     setReadme(readmeContent);
+  //     setLoadingReadme(false);
+  //   };
 
-    // Only fetch README when we expand the card (optional feature for later)
-    // For now, we'll just leave this commented out to avoid too many API calls
-    // getReadme();
-  }, [project.name]);
+  //   // Only fetch README when we expand the card (optional feature for later)
+  //   // getReadme();
+  // }, [project.name]);
 
   // Helper function to format dates
   const formatDate = (dateString) => {
