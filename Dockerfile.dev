@@ -1,0 +1,17 @@
+# Dockerfile.dev
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Install dependencies first (better caching)
+COPY package*.json ./
+RUN npm install
+
+# Copy project files
+COPY . .
+
+# Set environment variable to help with file watching in containers
+ENV CHOKIDAR_USEPOLLING=true
+
+# Command to run the development server
+CMD ["npm", "start"]

@@ -1,0 +1,18 @@
+version: '3'
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: github-portfolio-dev
+    ports:
+      - "3001:3000"  # Map to 3001 to avoid conflicts
+    volumes:
+      - ./:/app
+      - /app/node_modules  # This prevents overwriting node_modules with host directory
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+    # Easy shutdown with Ctrl+C
+    tty: true
+    stdin_open: true
