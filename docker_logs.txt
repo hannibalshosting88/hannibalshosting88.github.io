@@ -1,0 +1,26 @@
+time="2025-03-31T14:43:45-04:00" level=warning msg="/home/hannibal/hannibalshosting88.github.io/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+ Container github-portfolio-dev  Created
+Attaching to github-portfolio-dev
+github-portfolio-dev  | 
+github-portfolio-dev  | > hannibalshosting88.github.io@0.1.0 start
+github-portfolio-dev  | > react-scripts start
+github-portfolio-dev  | 
+github-portfolio-dev  | [1G[0K(node:25) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+github-portfolio-dev  | (Use `node --trace-deprecation ...` to show where the warning was created)
+github-portfolio-dev  | (node:25) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+github-portfolio-dev  | [2J[3J[H[36mStarting the development server...[39m
+github-portfolio-dev  | [36m[39m
+github-portfolio-dev  | [2J[3J[H[32mCompiled successfully![39m
+github-portfolio-dev  | 
+github-portfolio-dev  | You can now view [1mhannibalshosting88.github.io[22m in the browser.
+github-portfolio-dev  | 
+github-portfolio-dev  |   [1mLocal:[22m            http://localhost:[1m3000[22m
+github-portfolio-dev  |   [1mOn Your Network:[22m  http://172.18.0.2:[1m3000[22m
+github-portfolio-dev  | 
+github-portfolio-dev  | Note that the development build is not optimized.
+github-portfolio-dev  | To create a production build, use [36mnpm run build[39m.
+github-portfolio-dev  | 
+github-portfolio-dev  | webpack compiled [1m[32msuccessfully[39m[22m
+Gracefully stopping... (press Ctrl+C again to force)
+ Container github-portfolio-dev  Stopping
+ Container github-portfolio-dev  Stopped

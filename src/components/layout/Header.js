@@ -48,7 +48,7 @@ function Header() {
       ) : (
         // Fallback if profile loading fails
         <>
-          <h1>Your Name</h1>
+          <h1>Papa Hannibal</h1>
           <p>Full Stack Developer | Linux Administrator | Security Specialist</p>
           <div className="social-links">
             <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">GitHub</a>
